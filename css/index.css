@@ -1,0 +1,383 @@
+@charset "utf-8";
+
+.main {
+  background-color: #0a0a0a;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+.first-view {
+  height: 768px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url(../images/hero_PC.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.first-view-text h1 {
+  margin-bottom: 40px;
+  font-size: 48px;
+}
+
+.first-view-text p {
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+.link-button-area {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 80px;
+}
+
+.link-button {
+  background-color: #0a0a0a;
+  border: solid 1px #fff;
+  display: inline-block;
+  min-width: 180px;
+  line-height: 48px;
+  border-radius: 8px;
+}
+
+.link-button:hover {
+  background-color: #1e5fcf
+}
+
+.worksSec h2 {
+  text-align: center;
+  margin-top: 280px;
+  margin-bottom: 80px;
+  font-size: 36px;
+}
+
+.work-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.work-card {
+  width: 400px;
+  height: 200px;
+  border-radius: 8px;
+  border: solid 1px #fff;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  padding-left: 60px;
+}
+
+.work-card-none {
+  width: 400px;
+  height: 200px;
+  border-radius: 8px;
+  border: solid 1px #fff;
+  background-color: #1e5fcf;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+}
+
+.serviceSec h2 {
+  text-align: center;
+  margin-top: 280px;
+  margin-bottom: 80px;
+  font-size: 36px;
+}
+
+.text-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.text {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-left: 100px;
+}
+
+.text-box-area {
+  margin-bottom: 50px;
+}
+
+.aboutSec h2 {
+  text-align: center;
+  margin-top: 280px;
+  margin-bottom: 80px;
+  font-size: 36px;
+}
+
+.read {
+  font-size: 24px;
+  line-height: 1.6;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.read-text {
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.read-text p {
+  padding-bottom: 30px;
+}
+
+.contactSec h2 {
+  text-align: center;
+  margin-top: 280px;
+  margin-bottom: 80px;
+  font-size: 36px;
+}
+
+.box-area {
+  text-align: center;
+}
+
+input {
+  width: 500px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #fff;
+  background-color: #1e5fcf;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+input::placeholder {
+  color: #fff;
+  font-size: 16px;
+}
+
+textarea {
+  width: 500px;
+  height: 250px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #fff;
+  background-color: #1e5fcf;
+  border-radius: 8px;
+  margin-bottom: 45px;
+}
+
+textarea::placeholder {
+  color: #fff;
+  font-size: 16px;
+}
+
+.submit {
+  text-align: center;
+}
+
+input[type="submit"] {
+  text-align: center;
+  width: 180px;
+  background-color: #0a0a0a;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 15px 40px;
+  margin-bottom: 240px;
+}
+
+input[type="submit"]:hover {
+  background-color: #1e5fcf;
+  cursor: pointer;
+}
+
+.onlyPC {
+  display: block;
+}
+
+#to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 12px 16px;
+  font-size: 20px;
+  border-radius: 50%;
+  background: #1e5fcf;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+#to-top.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+@media (max-width: 800px) {
+.first-view {
+  background-image: url(../images/hero_SP.jpg);
+}
+
+.first-view-text h1 {
+  font-size: 36px;
+}
+
+.first-view-text p {
+  font-size: 20px;
+}
+
+.link-button-area {
+  font-size: 16px;
+}
+
+.link-button {
+  min-width: 280px;
+  line-height: 60px;
+}
+
+.worksSec h2 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-size: 24px;
+}
+
+.work-card {
+  width: 300px;
+  height: 150px;
+  font-size: 16px;
+  padding-left: 60px;
+}
+
+.work-card-none {
+  width: 300px;
+  height: 150px;
+}
+
+.serviceSec h2 {
+  margin-top: 160px;
+  margin-bottom: 80px;
+  font-size: 24px;
+}
+
+.text-area {
+  margin-left: 20px;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size:16px;
+  line-height: 1.6;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.aboutSec h2 {
+  margin-top: 160px;
+  margin-bottom: 80px;
+  font-size: 24px;
+}
+
+.read {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.read-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.read-text p {
+  padding-bottom: 30px;
+}
+
+.read-text ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.onlyPC {
+  display: none;
+}
+
+.contactSec h2 {
+  margin-top: 160px;
+  margin-bottom: 80px;
+  font-size: 24px;
+}
+
+input {
+  width: 300px;
+  padding: 12px;
+  font-size: 16px;
+}
+
+textarea {
+  width: 300px;
+  height: 150px;
+  padding: 12px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  width: 280px;
+  font-size: 16px;
+  margin-bottom: 100px;
+}
+}
+
+@media (min-width: 801px) and (max-width: 1080px) {
+
+.title {
+  font-size: 20px;
+}
+
+.text {
+  font-size: 16px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.read {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.read-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.read-text p {
+  padding-bottom: 30px;
+}
+
+}
